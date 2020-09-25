@@ -41,6 +41,7 @@ hs_err_pid*
 
 ### Maven ###
 target/
+test/
 .mvn/
 
 # End of https://www.gitignore.io/api/java,maven,intellij
