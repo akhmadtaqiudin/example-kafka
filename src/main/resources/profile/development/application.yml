@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: local
+  kafka:
+    consumer:
+      bootstrap-servers: 127.0.0.1:9092
+      kafka-topic: kafka-test
+    producer:
+      bootstrap-servers: 127.0.0.1:9092
+      kafka-topic: kafka-test
+
