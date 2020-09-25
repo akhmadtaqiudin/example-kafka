@@ -35,8 +35,9 @@ public class ConsumeService {
         log.info("{} in partition {}, consume {}", topic, partition, message);
         latch.countDown();
 
+        InputReq[] req = mapper.readValue(message,InputReq[].class);
 
-        log.info("Sending to topic {}, with body {}", "kafka-test-produce", message);
-        template.send("kafka-test-produce",message);
+        log.info("Sending to topic {}, with body {}", "kafka-test-produce", req);
+        template.send("kafka-test-produce",req);
     }
 }
