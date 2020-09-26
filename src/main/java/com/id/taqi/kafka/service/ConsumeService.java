@@ -23,8 +23,6 @@ public class ConsumeService {
     @Autowired
     private KafkaTemplate template;
 
-    @Autowired
-    private MappingData mappingData;
     private final ObjectMapper mapper = new ObjectMapper();
     private CountDownLatch latch = new CountDownLatch(1);
 
