@@ -1,0 +1,8 @@
+Run server zookeeper
+$ ./bin/zookeeper-server-start.sh config/zookeeper.properties
+
+Run server kafka
+$ ./bin/kafka-server-start.sh config/server.properties
+
+Run console consumer
+$ ./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic topic-name
